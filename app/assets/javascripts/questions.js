@@ -1,6 +1,6 @@
-'use strict';
 
-function validateCtrl($scope) {
+angular.module('screenaApp', [])
+.controller('questionsCtrl', ["$scope", function($scope){
   
   $scope.questions = questions;
   
@@ -47,7 +47,7 @@ function validateCtrl($scope) {
   };
 
   $scope.numbers = makeNumbers("1,2,3,4");
-}
+}]);
 
 var questions = [
   {
