@@ -1,0 +1,44 @@
+<div class="container-fluid" ng-controller="validateCtrl">  
+      <div class="well">
+        <h1 class="text-center">{{ currentQuestion.label }}</h1>
+        <div class="text-center" ng-switch="currentQuestion.input_type">
+          <div ng-switch-when="text">
+            <input ng-model="answer"/><br /><br />
+            <div class="question-button">
+              <button class="btn btn-primary btn-block btn-md" ng-click="goToNextQuestion(answer, 0);">next question...</button>
+            </div>
+          </div>
+          <div ng-switch-when="select">
+            <div class="btn-group" role="group" aria-label="..." ng-repeat="option in currentQuestion.options">
+              <div class="btn-group" role="group">
+                <button type="button" class="btn btn-primary btn-md" ng-click="goToNextQuestion(option.answer, option.weight)">{{ option.answer }}</button>
+              </div>
+            </div>
+          </div>
+          <div ng-switch-when="checkbox">
+            <div ng-repeat="option in currentQuestion.options">
+              <div>
+                <span><input type="checkbox">{{ option.answer }}</span>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-md" ng-click="goToNextQuestion(answer, 0);">next question...</button>
+          </div>
+        </div>
+        <div class="progress" ng-hide="isDone()">
+          <button ng-repeat="num in numQuestions()" class="btn btn-xs" ng-class="{'progress-done': isStepDone(num)}">{{ num }}</button>
+        </div>
+        <div ng-show="isDone()" class="text-center">
+          <p>screena will be in contact when a job matches your skills.</p><br />
+          <button class="btn btn-primary btn-md">view my dashboard</button>
+        </div>
+      </div>
+      <div>
+        <ul class="list-inline text-center">
+          <li ng-repeat="number in numbers">
+            <button class="btn btn-primary letter-button"
+                    ng-disabled="!number.selected"
+                    ng-click="progressBar(number);">{{ number.name }}</button>
+          </li>
+        </ul>
+      </div>
+    </div>
