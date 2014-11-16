@@ -1,8 +1,12 @@
 
 angular.module('screenaApp', [])
-.controller('questionsCtrl', ["$scope", function($scope){
+.controller('questionsCtrl', ["$http", "$scope", function($http, $scope){
   
   $scope.questions = questions;
+
+  // $http.get('/questions.json').success(function(data){
+  //   $scope.questions = data
+  // })
   
   $scope.currentQuestion = $scope.questions[0];
   
