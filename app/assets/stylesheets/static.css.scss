@@ -1,0 +1,68 @@
+.page-1 {
+
+  .main-logo {
+    padding-top: 3em;
+    width: 40%;
+    margin-left: 21.5em;
+  }
+
+  h1, h2, h3, h4 {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 10em;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .jumbotron {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background: transparent;
+    padding-top: 0;
+    p {
+      font-size: 3.5em;
+      text-align: center;
+    }
+  }
+  
+  .circle {
+    border-radius: 50%;
+    width: 20em;
+    height: 20em;
+    position: relative;
+    background-color: #268FCE;
+    margin-bottom: 1em;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .circle-left {
+    /* float: left; */
+    /* margin-left: 20em; */
+  }
+
+  .circle-right {
+    /* float: right; */
+    /* margin-right: 20em; */
+  }
+
+  .circle-text {
+    color: white;
+    margin-top: 2em;
+    text-align: center;
+  }
+
+  .description {
+    clear: both;
+    text-align: center;
+    padding-top: 4em;
+    p {
+      font-size: 2.5em;
+    }
+  }
+}
