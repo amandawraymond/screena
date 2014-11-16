@@ -4,6 +4,9 @@ class OptionsController < ApplicationController
   def applicant
   end
 
+  def employer
+  end
+
   # GET /options
   # GET /options.json
   def index

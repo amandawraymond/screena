@@ -6,9 +6,12 @@
       <p class="lead">Are you an...</p>
       <br>
       <div class="row">
+        <%= link_to employers_path do %>
         <div class = "circle circle-left col-md-4 col-md-offset-2" ng-click="employer()">
           <p class = "circle-text">Employer</p>
         </div>
+        <% end %>
+        
         <%= link_to applicants_path do %>
           <div class = "circle circle-right col-md-4 col-md-offset-2">
             <p class = "circle-text">Applicant</p>

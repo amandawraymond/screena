@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   get 'static/index'
   get 'applicants/' => 'options#applicant'
+  get 'employers/' => 'options#employer'
+
 
   resources :users
 
