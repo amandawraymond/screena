@@ -1,6 +1,6 @@
 <div ng-controller="questionsCtrl" class="container-fluid">  
       <div class="well">
-        <h1 class="text-center">{{ questions }}</h1>
+        <h1 class="text-center">{{ currentQuestion.label }}</h1>
         <div class="text-center" ng-switch="currentQuestion.input_type">
           <div ng-switch-when="text">
             <input ng-model="answer"/><br /><br />
