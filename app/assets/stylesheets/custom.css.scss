@@ -227,3 +227,57 @@
     text-align: center;
   }
 }
+/*employer dashboard*/
+.employer-applicant-dashboard {
+  .logo {
+    padding-top: 3em;
+    width: 15%;
+    margin-left: 1em;
+  }
+  
+  .well {
+    clear: both;
+    max-width: 70%;
+    margin:0 auto;
+    border: none;
+    margin-bottom: 30px;
+    .panel {
+      width: 60%;
+      margin: 0 auto;
+    }
+    .panel-heading {
+      border: 1px solid #6AA7D3;
+      border-left-width: 10px;
+      background-color: white;
+    }
+    .panel-body {
+      font-size: 20px;
+     }
+     .lead {
+       font-size: 30px;
+       margin-bottom: 0px;
+     } 
+  }
+  
+  .jumbotron {
+    max-width: 75%;
+    margin: 0 auto;
+    background: transparent;
+    h2 {
+      font-size: 55px;
+    }
+    .well {
+      width: 70%;
+      margin: 0 auto;
+      background-color: #4591C8;
+      opacity: 0.8;
+      color: white;
+      border: none;
+      margin-bottom: 75px;
+    }
+    .lead {
+      font-size: 40px;
+      margin-bottom: 0px;
+    }
+  } 
+}
