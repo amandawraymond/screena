@@ -1,7 +1,6 @@
 angular.module('screenaApp', ['ngAnimate'])
 .controller('questionsCtrl', ["$http", "$scope", function($http, $scope){
   
-  console.log("questionsCtrl is alive");
   $scope.questions = [];
 
   $http.get('/questions.json').success(function(data){
