@@ -1,9 +1,10 @@
 /*STATIC - HOME PAGE CSS*/
 .page-1 {
   .main-logo {
+    margin: 0 auto;
     padding-top: 3em;
+    padding-bottom: 3em;
     width: 40%;
-    margin-left: 21.5em;
   }
 
   h1, h2, h3, h4 {
@@ -39,16 +40,22 @@
     margin-bottom: 1em;
     cursor: pointer;
     cursor: hand;
+    margin: 0 auto;
   }
 
-  .circle-left {
-    /* float: left; */
-    /* margin-left: 20em; */
+  .circle-row {
+    max-width: 40%;
+    margin: 0 auto;
+  }
+
+   .circle-left {
+    float: left;
+    
   }
 
   .circle-right {
-    /* float: right; */
-    /* margin-right: 20em; */
+    float: right;
+  
   }
 
   .circle-text {
@@ -60,7 +67,7 @@
   .description {
     clear: both;
     text-align: center;
-    padding-top: 4em;
+    padding-top: 6em;
     p {
       font-size: 2.5em;
     }
