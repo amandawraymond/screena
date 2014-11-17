@@ -256,7 +256,8 @@
     .panel-heading {
       border: 1px solid #6AA7D3;
       border-left-width: 10px;
-      background-color: white;
+      background-color: #C0C0C0;
+      color: #6AA7D3;
     }
     .panel-body {
       font-size: 20px;
@@ -278,7 +279,6 @@
       width: 70%;
       margin: 0 auto;
       background-color: #4591C8;
-      opacity: 0.8;
       color: white;
       border: none;
       margin-bottom: 75px;
