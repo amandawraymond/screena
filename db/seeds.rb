@@ -13,7 +13,9 @@ question = Question.create(question_number: 2, name:"skill", label:"What is your
 question.options.create(answer:"Front End", weight:"1")
 question.options.create(answer:"Back End", weight:"1")
 question.options.create(answer:"Full Stack", weight:"1")
-question_one = Question.create(question_number: 3, name:"companies", label:"What type of companies have you worked at?", input_type:"radio")
+question_one = Question.create(question_number: 3, name:"companies", label:"What type of companies have you worked at?", input_type:"checkbox")
 question_one.options.create(answer:"Startups", weight:"1")
 question_one.options.create(answer:"Small and Mid-Size", weight:"1")
 question_one.options.create(answer:"Large Enterprises", weight:"1")
+question_two = Question.create(question_number: 4, name:"thankyou", label:"Thank you!", input_type:"message")
+

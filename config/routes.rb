@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'prospects/' => 'options#prospect'
   get 'employers/' => 'options#employer'
   get 'applicant_questions/' => 'questions#applicant_questions'
+  get 'dashboard/' => 'static#employer_dashboard'
 
 
   resources :users

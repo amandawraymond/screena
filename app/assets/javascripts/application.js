@@ -12,10 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require twitter/bootstrap
-//= require underscore
-//= require angular
 //= require turbolinks
+//= require angular
+//= require angular-animate
+//= require twitter/bootstrap
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require_tree .
